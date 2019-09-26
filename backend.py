@@ -2,7 +2,7 @@ import pygame
 import numpy as np
 
 
-class GameBackEnd(object):
+class GameBackEnd:
     """This class handles the game backend."""
 
     def __init__(self, row_count, column_count, max_count):
@@ -101,14 +101,13 @@ class GameUserInterface(GameBackEnd):
 
     def __init__(self, row_count, column_count, 
                     max_count, box_length, y_offset):
-        # super(GameBackEnd).__init__(row_count, column_count, max_count)
-        GameBackEnd.__init__(self, row_count, column_count, max_count)
+        super().__init__(row_count, column_count, max_count)
         self.box_length = box_length
         self.display_height = self.row_count * self.box_length
         self.display_width = self.column_count * self.box_length
         self.y_offset = y_offset
         pygame.init()
-        pygame.display.set_caption("Connect {}".format(self.max_count))
+        pygame.display.set_caption("Connect {self.max_count}")
         clock = pygame.time.Clock()
         clock.tick(30)
         self.black = (0, 0, 0)

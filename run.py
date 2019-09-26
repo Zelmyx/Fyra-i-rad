@@ -53,7 +53,7 @@ def main():
 
         # Display current player
         Game_UI.delete_text(black, (0, 0), (display_width, y_offset))
-        Game_UI.display_message("Player {}'s turn!".format(player), color, "large",
+        Game_UI.display_message(f"Player {player}'s turn!", color, "large",
                                 ((display_width / 2), (y_offset / 2)))
 
         # Looping over every event (button press)
@@ -78,7 +78,7 @@ def main():
                     if Game_BE.check_for_win(row, column, player):
                         Game_UI.delete_text(black, (0, 0), 
                                         (display_width, y_offset))
-                        Game_UI.display_message("Player {} won!".format(player), 
+                        Game_UI.display_message(f"Player {player} won!", 
                                             color, "normal", 
                                             ((display_width / 2), 40))
                         game_over = True
