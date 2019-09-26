@@ -20,13 +20,13 @@
 cd Desktop/<namnet av din mapp>/
 ```
 
-Ladda ner de nödvändiga tilläggen:
+7. Ladda ner de nödvändiga tilläggen:
 
 ```
 pip3 install -r requirements.txt
 ```
 
-7. Kör appen genom att skriva in följande:
+8. Kör appen genom att skriva in följande:
 
 ```
 python3 run.py
