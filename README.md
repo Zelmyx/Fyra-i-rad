@@ -1,7 +1,5 @@
 # Spela fyra i rad på datorn!
 
-### OBS! Koden kommer att uppdateras under läsåret och den slutgiltiga koden kommer att innehålla en AI som man kan spela mot.
-
 ## Instruktioner för att ladda ner koden (macOS):
 
 1. Skapa en ny mapp på ditt skrivbord.
